@@ -461,19 +461,24 @@
             const music = document.getElementById('bg-music');
             if (music.paused) {
                 music.volume = 0.6; // Soft volume for meditation (60%)
-                music.play().catch(e => console.log("Audio play failed:", e));
+                music.play().then(() => {
+                    // Only remove listeners if playback successfully starts
+                    window.removeEventListener('click', playMusicOnInteraction);
+                    window.removeEventListener('scroll', playMusicOnInteraction);
+                    window.removeEventListener('keydown', playMusicOnInteraction);
+                    window.removeEventListener('touchstart', playMusicOnInteraction);
+                }).catch(e => {
+                    // Playback was blocked (likely because 'scroll' isn't considered a strong enough interaction)
+                    console.log("Audio play failed, waiting for stronger interaction (like a click)...", e);
+                });
             }
-            // Remove listeners after first interaction
-            window.removeEventListener('click', playMusicOnInteraction);
-            window.removeEventListener('scroll', playMusicOnInteraction);
-            window.removeEventListener('keydown', playMusicOnInteraction);
-            window.removeEventListener('touchstart', playMusicOnInteraction);
         };
         
-        window.addEventListener('click', playMusicOnInteraction, { once: true });
-        window.addEventListener('scroll', playMusicOnInteraction, { once: true });
-        window.addEventListener('keydown', playMusicOnInteraction, { once: true });
-        window.addEventListener('touchstart', playMusicOnInteraction, { once: true });
+        // Listeners stay active until playback actually succeeds
+        window.addEventListener('click', playMusicOnInteraction);
+        window.addEventListener('scroll', playMusicOnInteraction);
+        window.addEventListener('keydown', playMusicOnInteraction);
+        window.addEventListener('touchstart', playMusicOnInteraction);
     </script>
 </body>
 </html>
