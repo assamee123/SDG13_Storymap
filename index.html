@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Greenland is Melting — SDG 13 Storymap</title>
-    <meta name="description" content="An interactive data storymap exploring Greenland's accelerating ice loss, driven by climate change. SDG 13: Climate Action.">
+    <meta name="description"
+        content="An interactive data storymap exploring Greenland's accelerating ice loss, driven by climate change. SDG 13: Climate Action.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" />
     <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
     <audio id="bg-music" loop src="Assets/music.mp3"></audio>
 
@@ -18,9 +21,13 @@
     <!-- SECTION 1: HERO -->
     <section id="s1-hero">
         <div class="container">
-            <img src="Assets/HafenCity_Universit%C3%A4t_Logo-cropped.svg" alt="HafenCity University Hamburg Logo" class="hcu-logo">
+            <img src="Assets/HafenCity_Universit%C3%A4t_Logo-cropped.svg" alt="HafenCity University Hamburg Logo"
+                class="hcu-logo">
             <h1>Greenland is Melting</h1>
-            <p style="font-size:1.45rem;color:#ddd;max-width:800px;text-align:center;">One of Earth's last great ice sheets is disappearing before our eyes. Greenland is one of the most rapidly changing environments on Earth, its mass loss driven by a complex system of atmospheric warming, ocean heat intrusion, and accelerating feedback mechanisms.</p>
+            <p style="font-size:1.45rem;color:#ddd;max-width:800px;text-align:center;">One of Earth's last great ice
+                sheets is disappearing before our eyes. Greenland is one of the most rapidly changing environments on
+                Earth, its mass loss driven by a complex system of atmospheric warming, ocean heat intrusion, and
+                accelerating feedback mechanisms.</p>
             <div class="stats-ticker">
                 <span>266 Gt/yr mass loss</span> &middot;
                 <span>11 mm sea level rise</span> &middot;
@@ -36,9 +43,20 @@
             <div class="glass">
                 <h2>The Scale of the Melt</h2>
                 <div class="iframe-container">
-                    <iframe title="Ice Sheet Mass Balance" aria-label="Line chart" id="datawrapper-chart-Mf9Cv" src="https://datawrapper.dwcdn.net/Mf9Cv/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="464" data-external="1"></iframe><script type="text/javascript">(function(){function e(){window.addEventListener("message",function(e){if(e.data["datawrapper-height"]!==void 0){var t=document.querySelectorAll("iframe");for(var n in e.data["datawrapper-height"])for(var r=0,i;i=t[r];r++)if(i.contentWindow===e.source){var a=e.data["datawrapper-height"][n]+"px";i.style.height=a}}})}e()})();</script>
+                    <iframe title="Ice Sheet Mass Balance" aria-label="Line chart" id="datawrapper-chart-Mf9Cv"
+                        src="https://datawrapper.dwcdn.net/Mf9Cv/1/" scrolling="no" frameborder="0"
+                        style="width: 0; min-width: 100% !important; border: none;" height="464"
+                        data-external="1"></iframe>
+                    <script
+                        type="text/javascript">(function () { function e() { window.addEventListener("message", function (e) { if (e.data["datawrapper-height"] !== void 0) { var t = document.querySelectorAll("iframe"); for (var n in e.data["datawrapper-height"]) for (var r = 0, i; i = t[r]; r++)if (i.contentWindow === e.source) { var a = e.data["datawrapper-height"][n] + "px"; i.style.height = a } } }) } e() })();</script>
                 </div>
-                <p class="caption">Satellite gravity measurements reveal a staggering reality: Greenland has shed over 4,700 gigatonnes of ice since 2002. In the last 26 years alone, this melting ice has added 11 millimeters to global sea level rise, threatening hundreds of millions of people in low-lying coastal regions worldwide. <em>Source: <a href="https://ourworldindata.org/grapher/ice-sheet-mass-balance" target="_blank" style="color: inherit; text-decoration: underline;">Our World in Data</a> / NASA GRACE.</em></p>
+                <p class="caption">Satellite gravity measurements reveal a staggering reality: Greenland has shed over
+                    4,700 gigatonnes of ice since 2002. In the last 26 years alone, this melting ice has added 11
+                    millimeters to global sea level rise, threatening hundreds of millions of people in low-lying
+                    coastal regions worldwide. <em>Source: <a
+                            href="https://ourworldindata.org/grapher/ice-sheet-mass-balance" target="_blank"
+                            style="color: inherit; text-decoration: underline;">Our World in Data</a> / NASA GRACE.</em>
+                </p>
             </div>
         </div>
     </section>
@@ -49,9 +67,19 @@
             <div class="glass">
                 <h2>Fueling the Melt: The Rise of CO₂</h2>
                 <div class="iframe-container">
-                    <iframe title="Global atmospheric CO₂ concentration" aria-label="Line chart" id="datawrapper-chart-OlY1G" src="https://datawrapper.dwcdn.net/OlY1G/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="444" data-external="1"></iframe><script type="text/javascript">(function(){function e(){window.addEventListener("message",function(e){if(e.data["datawrapper-height"]!==void 0){var t=document.querySelectorAll("iframe");for(var n in e.data["datawrapper-height"])for(var r=0,i;i=t[r];r++)if(i.contentWindow===e.source){var a=e.data["datawrapper-height"][n]+"px";i.style.height=a}}})}e()})();</script>
+                    <iframe title="Global atmospheric CO₂ concentration" aria-label="Line chart"
+                        id="datawrapper-chart-OlY1G" src="https://datawrapper.dwcdn.net/OlY1G/1/" scrolling="no"
+                        frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="444"
+                        data-external="1"></iframe>
+                    <script
+                        type="text/javascript">(function () { function e() { window.addEventListener("message", function (e) { if (e.data["datawrapper-height"] !== void 0) { var t = document.querySelectorAll("iframe"); for (var n in e.data["datawrapper-height"]) for (var r = 0, i; i = t[r]; r++)if (i.contentWindow === e.source) { var a = e.data["datawrapper-height"][n] + "px"; i.style.height = a } } }) } e() })();</script>
                 </div>
-                <p class="caption">Human-driven carbon emissions act as the primary catalyst for this unprecedented melting. Rising atmospheric CO₂ levels (now >420 ppm) drive <strong>Arctic amplification</strong> — a phenomenon where the Arctic warms at two to four times the global average rate. The region has already warmed by 3.3°C compared to pre-industrial levels, with no sign of slowing. <em>Source: <a href="https://ourworldindata.org/grapher/co2-concentration-long-term" target="_blank" style="color: inherit; text-decoration: underline;">Our World in Data</a> / NOAA.</em></p>
+                <p class="caption">Human-driven carbon emissions act as the primary catalyst for this unprecedented
+                    melting. Rising atmospheric CO₂ levels (now >420 ppm) drive <strong>Arctic amplification</strong> —
+                    a phenomenon where the Arctic warms at two to four times the global average rate. The region has
+                    already warmed by 3.3°C compared to pre-industrial levels, with no sign of slowing. <em>Source: <a
+                            href="https://ourworldindata.org/grapher/co2-concentration-long-term" target="_blank"
+                            style="color: inherit; text-decoration: underline;">Our World in Data</a> / NOAA.</em></p>
             </div>
         </div>
     </section>
@@ -68,7 +96,11 @@
                     <span id="modis-highlight" class="highlight-badge" style="display:none">97 % Melt Event!</span>
                 </div>
                 <div class="map-container" id="map-modis"></div>
-                <p class="caption">In July 2012, 97% of the ice sheet surface showed signs of melting — an extreme event becoming recurrent. This triggers a dangerous <strong>ice-albedo feedback</strong>: melting ice reveals darker ocean and land that absorb the sun's energy, further accelerating the melt. Meanwhile, surface meltwater draining through moulins provides <strong>basal lubrication</strong>, speeding up the ice flow toward the ocean.</p>
+                <p class="caption">In July 2012, 97% of the ice sheet surface showed signs of melting — an extreme event
+                    becoming recurrent. This triggers a dangerous <strong>ice-albedo feedback</strong>: melting ice
+                    reveals darker ocean and land that absorb the sun's energy, further accelerating the melt.
+                    Meanwhile, surface meltwater draining through moulins provides <strong>basal lubrication</strong>,
+                    speeding up the ice flow toward the ocean.</p>
             </div>
         </div>
     </section>
@@ -84,7 +116,10 @@
                     <span style="left:50%;transform:translateX(-50%)">0</span>
                     <span style="right:0">+3 cm/yr</span>
                 </div>
-                <p class="caption" style="margin-top:1rem">CryoSat-2 radar altimetry reveals the margins are thinning up to 22 cm per year. This coastal thinning is largely driven by <strong>ocean heat intrusion</strong> — warm subpolar ocean water moving into the Arctic basin — which relentlessly undermines marine-terminating glaciers from below.</p>
+                <p class="caption" style="margin-top:1rem">CryoSat-2 radar altimetry reveals the margins are thinning up
+                    to 22 cm per year. This coastal thinning is largely driven by <strong>ocean heat intrusion</strong>
+                    — warm subpolar ocean water moving into the Arctic basin — which relentlessly undermines
+                    marine-terminating glaciers from below.</p>
             </div>
         </div>
     </section>
@@ -94,8 +129,14 @@
         <div class="container scroll-reveal">
             <div class="glass">
                 <h2>Glacier Retreat — Jakobshavn Timelapse</h2>
-                <div class="iframe-container"><iframe id="jakobshavn-iframe" data-src="https://earthengine.google.com/iframes/timelapse_player_embed.html#v=69.15,-50.5,9,latLng&t=3.23&ps=50&bt=19840101&et=20221231" allow="autoplay" style="width:100%;height:100%;border:0"></iframe></div>
-                <p class="caption">Jakobshavn Glacier has retreated 35 km since 1850 — the pace tripled after 2000. It now discharges roughly 46 km³ of ice into the ocean each year. Retreating past critical thresholds risks crossing <strong>tipping points</strong> into marine ice sheet instability, causing irreversible collapse regardless of future emissions cuts. <em>Source: Google Earth Engine / Landsat.</em></p>
+                <div class="iframe-container"><iframe id="jakobshavn-iframe"
+                        data-src="https://earthengine.google.com/iframes/timelapse_player_embed.html#v=69.15,-50.5,9,latLng&t=3.23&ps=50&bt=19840101&et=20221231"
+                        allow="autoplay" style="width:100%;height:100%;border:0"></iframe></div>
+                <p class="caption">Jakobshavn Glacier has retreated 35 km since 1850 — the pace tripled after 2000. It
+                    now discharges roughly 46 km³ of ice into the ocean each year. Retreating past critical thresholds
+                    risks crossing <strong>tipping points</strong> into marine ice sheet instability, causing
+                    irreversible collapse regardless of future emissions cuts. <em>Source: Google Earth Engine /
+                        Landsat.</em></p>
             </div>
         </div>
     </section>
@@ -106,11 +147,21 @@
             <div class="glass">
                 <h2>Temperature Anomaly (Ilulissat)</h2>
                 <div class="iframe-container">
-                    <iframe title="" aria-label="Line chart" id="datawrapper-chart-k8ztA" src="https://datawrapper.dwcdn.net/k8ztA/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="360" data-external="1"></iframe>
-                    <script type="text/javascript">(function(){function e(){window.addEventListener("message",function(e){if(e.data["datawrapper-height"]!==void 0){var t=document.querySelectorAll("iframe");for(var n in e.data["datawrapper-height"])for(var r=0,i;i=t[r];r++)if(i.contentWindow===e.source){var a=e.data["datawrapper-height"][n]+"px";i.style.height=a}}})}e()})();</script>
+                    <iframe title="" aria-label="Line chart" id="datawrapper-chart-k8ztA"
+                        src="https://datawrapper.dwcdn.net/k8ztA/1/" scrolling="no" frameborder="0"
+                        style="width: 0; min-width: 100% !important; border: none;" height="360"
+                        data-external="1"></iframe>
+                    <script
+                        type="text/javascript">(function () { function e() { window.addEventListener("message", function (e) { if (e.data["datawrapper-height"] !== void 0) { var t = document.querySelectorAll("iframe"); for (var n in e.data["datawrapper-height"]) for (var r = 0, i; i = t[r]; r++)if (i.contentWindow === e.source) { var a = e.data["datawrapper-height"][n] + "px"; i.style.height = a } } }) } e() })();</script>
                 </div>
-                <p class="caption" style="margin-bottom:0.5rem;color:#fff;">At the local scale, Inuit communities in Ilulissat face direct cultural, economic, and physical consequences. Destabilised and unpredictable sea-ice seasons severely threaten their traditional hunting practices and coastal infrastructure.</p>
-                <p class="caption" style="font-size:0.9rem;">Source: The Programme for Monitoring of the Greenland Ice Sheet (PROMICE) and the Greenland Climate Network (GC-Net). The file contains automatic weather station (AWS) data from the "JAR" station, which stands for the Jakobshavn Ablation Region on the Greenland Ice Sheet.</p>
+                <p class="caption" style="margin-bottom:0.5rem;color:#fff;">At the local scale, Inuit communities in
+                    Ilulissat face direct cultural, economic, and physical consequences. Destabilised and unpredictable
+                    sea-ice seasons severely threaten their traditional hunting practices and coastal infrastructure.
+                </p>
+                <p class="caption" style="font-size:0.9rem;">Source: The Programme for Monitoring of the Greenland Ice
+                    Sheet (PROMICE) and the Greenland Climate Network (GC-Net). The file contains automatic weather
+                    station (AWS) data from the "JAR" station, which stands for the Jakobshavn Ablation Region on the
+                    Greenland Ice Sheet.</p>
             </div>
         </div>
     </section>
@@ -121,9 +172,11 @@
             <div class="glass">
                 <h2>Greenland Topography</h2>
                 <div class="iframe-container" style="height: 600px;">
-                    <iframe id="bedrock-iframe" data-src="Assets/kepler.gl.html" allow="web-share" style="width:100%;height:100%;border:0;border-radius:8px;"></iframe>
+                    <iframe id="bedrock-iframe" data-src="Assets/kepler.gl.html" allow="web-share"
+                        style="width:100%;height:100%;border:0;border-radius:8px;"></iframe>
                 </div>
-                <p class="caption">Explore the map of Greenland. <em>Source: BedMachineGreenland_bed-v6, published by the National Snow and Ice Data Center (NSIDC).</em></p>
+                <p class="caption">Explore the map of Greenland. <em>Source: BedMachineGreenland_bed-v6, published by
+                        the National Snow and Ice Data Center (NSIDC).</em></p>
             </div>
         </div>
     </section>
@@ -135,18 +188,32 @@
                 <h2>The Cost of Inaction</h2>
                 <div class="sea-level-counter">Sea Level Contribution: <span id="slr-val">11.0000000</span> mm</div>
                 <div class="stat-cards">
-                    <div class="stat-card"><h3>266 Gt/yr</h3><p>Ice Mass Loss</p></div>
-                    <div class="stat-card"><h3>35 km</h3><p>Jakobshavn Retreat</p></div>
-                    <div class="stat-card"><h3>97 %</h3><p>Surface Melt (2012)</p></div>
-                    <div class="stat-card"><h3>+3.3 °C</h3><p>Arctic Warming</p></div>
+                    <div class="stat-card">
+                        <h3>266 Gt/yr</h3>
+                        <p>Ice Mass Loss</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>35 km</h3>
+                        <p>Jakobshavn Retreat</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>97 %</h3>
+                        <p>Surface Melt (2012)</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>+3.3 °C</h3>
+                        <p>Arctic Warming</p>
+                    </div>
                 </div>
                 <div class="elder-story-block">
                     <div class="elder-image-wrapper">
-                        <img src="https://resources.arctickingdom.com/hs-fs/hubfs/Imported_Blog_Media/Arctic_Kingdom_Inuit_in_traditional_Clothing_DSC_8960-Jun-29-2022-07-39-17-62-PM.jpg" alt="Inuit in traditional clothing" class="elder-image">
+                        <img src="https://resources.arctickingdom.com/hs-fs/hubfs/Imported_Blog_Media/Arctic_Kingdom_Inuit_in_traditional_Clothing_DSC_8960-Jun-29-2022-07-39-17-62-PM.jpg"
+                            alt="Inuit in traditional clothing" class="elder-image">
                         <p class="image-citation">Image source: Arctic Kingdom</p>
                     </div>
                     <div class="quote-block">
-                        "The sea ice used to come in October. Now we wait until January. Our hunters cannot go out."<br><span style="display:inline-block;margin-top:0.5rem;">— Inuit elder, Ilulissat.</span>
+                        "The sea ice used to come in October. Now we wait until January. Our hunters cannot go
+                        out."<br><span style="display:inline-block;margin-top:0.5rem;">— Inuit elder, Ilulissat.</span>
                     </div>
                 </div>
 
@@ -155,13 +222,21 @@
                 <div class="sources-list">
                     <h4>Data Sources</h4>
                     <ul>
-                        <li>NASA GRACE-FO: <a href="https://podaac-tools.jpl.nasa.gov/drive/files/allData/tellus/L3/mascon/RL06/JPL/v02/CRI/CSV/" target="_blank">JPL Tellus</a></li>
-                        <li>NOAA Mauna Loa CO₂: <a href="https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_mm_mlo.csv" target="_blank">GML Data</a></li>
-                        <li>NASA GIBS WMTS (MODIS): <a href="https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_Snow_Cover/" target="_blank">Earthdata</a></li>
-                        <li>ESA CryoSat-2: <a href="https://earth.esa.int/eogateway/missions/cryosat" target="_blank">ESA Earth Online</a></li>
-                        <li>Sentinel-2 / Jakobshavn: <a href="https://sentinels.copernicus.eu/" target="_blank">Copernicus</a></li>
+                        <li>NASA GRACE-FO: <a
+                                href="https://podaac-tools.jpl.nasa.gov/drive/files/allData/tellus/L3/mascon/RL06/JPL/v02/CRI/CSV/"
+                                target="_blank">JPL Tellus</a></li>
+                        <li>NOAA Mauna Loa CO₂: <a href="https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_mm_mlo.csv"
+                                target="_blank">GML Data</a></li>
+                        <li>NASA GIBS WMTS (MODIS): <a
+                                href="https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_Snow_Cover/"
+                                target="_blank">Earthdata</a></li>
+                        <li>ESA CryoSat-2: <a href="https://earth.esa.int/eogateway/missions/cryosat"
+                                target="_blank">ESA Earth Online</a></li>
+                        <li>Sentinel-2 / Jakobshavn: <a href="https://sentinels.copernicus.eu/"
+                                target="_blank">Copernicus</a></li>
                         <li>PROMICE / DMI: <a href="https://www.promice.org/" target="_blank">PROMICE</a></li>
-                        <li>BedMachine Greenland v5: <a href="https://nsidc.org/data/idbmg4" target="_blank">NSIDC</a></li>
+                        <li>BedMachine Greenland v5: <a href="https://nsidc.org/data/idbmg4" target="_blank">NSIDC</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -171,7 +246,8 @@
     <!-- FOOTER -->
     <footer class="site-footer">
         <div class="container">
-            <p>This storymap is created for the <strong>Bring Your Own Data</strong> course by Al Maimun As Samee, Philip Bentum, Mohamed Sheha.</p>
+            <p>This storymap is created for the <strong>Bring Your Own Data</strong> course by Al Maimun As Samee,
+                Philip Bentum, Mohamed Sheha.</p>
         </div>
     </footer>
 
@@ -193,39 +269,39 @@
 
     <!-- THREE.JS BACKGROUND — Vertex Earth + Scroll Stars -->
     <script type="module">
-    import * as THREE from "three";
+        import * as THREE from "three";
 
-    /* Canvas & renderer */
-    const canvas = document.getElementById('earth-bg');
-    const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
-    renderer.setSize(innerWidth, innerHeight);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        /* Canvas & renderer */
+        const canvas = document.getElementById('earth-bg');
+        const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+        renderer.setSize(innerWidth, innerHeight);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(45, innerWidth / innerHeight, 0.1, 1000);
-    camera.position.set(0, 0, 3.5);
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(45, innerWidth / innerHeight, 0.1, 1000);
+        camera.position.set(0, 0, 3.5);
 
-    /* Textures from the GitHub repo (raw CDN) */
-    const BASE = "https://raw.githubusercontent.com/bobbyroe/vertex-earth/main/src/";
-    const loader = new THREE.TextureLoader();
-    const colorMap = loader.load(BASE + "04_rainbow1k.jpg");
-    const elevMap  = loader.load(BASE + "01_earthbump1k.jpg");
-    const alphaMap = loader.load(BASE + "02_earthspec1k.jpg");
-    const starSprite = loader.load(BASE + "circle.png");
+        /* Textures from the GitHub repo (raw CDN) */
+        const BASE = "https://raw.githubusercontent.com/bobbyroe/vertex-earth/main/src/";
+        const loader = new THREE.TextureLoader();
+        const colorMap = loader.load(BASE + "04_rainbow1k.jpg");
+        const elevMap = loader.load(BASE + "01_earthbump1k.jpg");
+        const alphaMap = loader.load(BASE + "02_earthspec1k.jpg");
+        const starSprite = loader.load(BASE + "circle.png");
 
-    /* Globe group */
-    const globeGroup = new THREE.Group();
-    scene.add(globeGroup);
+        /* Globe group */
+        const globeGroup = new THREE.Group();
+        scene.add(globeGroup);
 
-    // Wireframe core
-    const coreGeo = new THREE.IcosahedronGeometry(1, 10);
-    const coreMat = new THREE.MeshBasicMaterial({ color: 0x202020, wireframe: true });
-    globeGroup.add(new THREE.Mesh(coreGeo, coreMat));
+        // Wireframe core
+        const coreGeo = new THREE.IcosahedronGeometry(1, 10);
+        const coreMat = new THREE.MeshBasicMaterial({ color: 0x202020, wireframe: true });
+        globeGroup.add(new THREE.Mesh(coreGeo, coreMat));
 
-    // Vertex-point earth
-    const detail = 120;
-    const pointsGeo = new THREE.IcosahedronGeometry(1, detail);
-    const vertexShader = `
+        // Vertex-point earth
+        const detail = 120;
+        const pointsGeo = new THREE.IcosahedronGeometry(1, detail);
+        const vertexShader = `
       uniform float size;
       uniform sampler2D elevTexture;
       varying vec2 vUv;
@@ -241,7 +317,7 @@
         gl_Position = projectionMatrix * mvPosition;
       }
     `;
-    const fragmentShader = `
+        const fragmentShader = `
       uniform sampler2D colorTexture;
       uniform sampler2D alphaTexture;
       varying vec2 vUv;
@@ -253,205 +329,208 @@
         gl_FragColor = vec4(color, alpha);
       }
     `;
-    const uniforms = {
-      size:         { value: 4.0 },
-      colorTexture: { value: colorMap },
-      elevTexture:  { value: elevMap },
-      alphaTexture: { value: alphaMap }
-    };
-    const pointsMat = new THREE.ShaderMaterial({
-      uniforms, vertexShader, fragmentShader, transparent: true
-    });
-    globeGroup.add(new THREE.Points(pointsGeo, pointsMat));
+        const uniforms = {
+            size: { value: 4.0 },
+            colorTexture: { value: colorMap },
+            elevTexture: { value: elevMap },
+            alphaTexture: { value: alphaMap }
+        };
+        const pointsMat = new THREE.ShaderMaterial({
+            uniforms, vertexShader, fragmentShader, transparent: true
+        });
+        globeGroup.add(new THREE.Points(pointsGeo, pointsMat));
 
-    /* Starfield (separate group so we can rotate it with scroll) */
-    function makeStarfield(numStars = 4500) {
-      const verts = [], colors = [];
-      for (let i = 0; i < numStars; i++) {
-        const radius = Math.random() * 25 + 25;
-        const u = Math.random(), v = Math.random();
-        const theta = 2 * Math.PI * u;
-        const phi = Math.acos(2 * v - 1);
-        verts.push(
-          radius * Math.sin(phi) * Math.cos(theta),
-          radius * Math.sin(phi) * Math.sin(theta),
-          radius * Math.cos(phi)
-        );
-        const col = new THREE.Color().setHSL(0.6, 0.2, Math.random());
-        colors.push(col.r, col.g, col.b);
-      }
-      const geo = new THREE.BufferGeometry();
-      geo.setAttribute("position", new THREE.Float32BufferAttribute(verts, 3));
-      geo.setAttribute("color",    new THREE.Float32BufferAttribute(colors, 3));
-      const mat = new THREE.PointsMaterial({ size: 0.2, vertexColors: true, map: starSprite, transparent: true });
-      return new THREE.Points(geo, mat);
-    }
-    const stars = makeStarfield();
-    scene.add(stars);
+        /* Starfield (separate group so we can rotate it with scroll) */
+        function makeStarfield(numStars = 4500) {
+            const verts = [], colors = [];
+            for (let i = 0; i < numStars; i++) {
+                const radius = Math.random() * 25 + 25;
+                const u = Math.random(), v = Math.random();
+                const theta = 2 * Math.PI * u;
+                const phi = Math.acos(2 * v - 1);
+                verts.push(
+                    radius * Math.sin(phi) * Math.cos(theta),
+                    radius * Math.sin(phi) * Math.sin(theta),
+                    radius * Math.cos(phi)
+                );
+                const col = new THREE.Color().setHSL(0.6, 0.2, Math.random());
+                colors.push(col.r, col.g, col.b);
+            }
+            const geo = new THREE.BufferGeometry();
+            geo.setAttribute("position", new THREE.Float32BufferAttribute(verts, 3));
+            geo.setAttribute("color", new THREE.Float32BufferAttribute(colors, 3));
+            const mat = new THREE.PointsMaterial({ size: 0.2, vertexColors: true, map: starSprite, transparent: true });
+            return new THREE.Points(geo, mat);
+        }
+        const stars = makeStarfield();
+        scene.add(stars);
 
-    /* Light */
-    scene.add(new THREE.HemisphereLight(0xffffff, 0x080820, 3));
+        /* Light */
+        scene.add(new THREE.HemisphereLight(0xffffff, 0x080820, 3));
 
-    /* Scroll tracking for stars */
-    let scrollY = 0;
-    window.addEventListener('scroll', () => { scrollY = window.scrollY; }, { passive: true });
+        /* Scroll tracking for stars */
+        let scrollY = 0;
+        window.addEventListener('scroll', () => { scrollY = window.scrollY; }, { passive: true });
 
-    /* Animation loop */
-    function animate() {
-      requestAnimationFrame(animate);
-      // Earth rotates at constant speed
-      globeGroup.rotation.y += 0.002;
-      // Stars rotate based on scroll position
-      const scrollFraction = scrollY / (document.documentElement.scrollHeight - innerHeight || 1);
-      stars.rotation.y = scrollFraction * Math.PI * 2;
-      stars.rotation.x = scrollFraction * Math.PI * 0.5;
-      renderer.render(scene, camera);
-    }
-    animate();
+        /* Animation loop */
+        function animate() {
+            requestAnimationFrame(animate);
+            // Earth rotates at constant speed
+            globeGroup.rotation.y += 0.002;
+            // Stars rotate based on scroll position
+            const scrollFraction = scrollY / (document.documentElement.scrollHeight - innerHeight || 1);
+            stars.rotation.y = scrollFraction * Math.PI * 2;
+            stars.rotation.x = scrollFraction * Math.PI * 0.5;
+            renderer.render(scene, camera);
+        }
+        animate();
 
-    /* Resize */
-    window.addEventListener('resize', () => {
-      camera.aspect = innerWidth / innerHeight;
-      camera.updateProjectionMatrix();
-      renderer.setSize(innerWidth, innerHeight);
-    });
+        /* Resize */
+        window.addEventListener('resize', () => {
+            camera.aspect = innerWidth / innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(innerWidth, innerHeight);
+        });
     </script>
 
     <!-- MAIN LOGIC (non-module) -->
     <script>
-    /* GSAP */
-    gsap.registerPlugin(ScrollTrigger);
-    Chart.defaults.color = '#ffffff';
-    Chart.defaults.font.family = "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
+        /* GSAP */
+        gsap.registerPlugin(ScrollTrigger);
+        Chart.defaults.color = '#ffffff';
+        Chart.defaults.font.family = "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif";
 
-    document.querySelectorAll('.scroll-reveal').forEach(el => {
-        gsap.to(el, {
-            opacity: 1, y: 0, duration: 1,
-            scrollTrigger: { trigger: el, start: "top 85%" }
-        });
-    });
-
-    /* Lazy-load iframes to trigger autoplay on scroll */
-    ['jakobshavn', 'bedrock'].forEach(id => {
-        const s = id === 'jakobshavn' ? '6' : '8';
-        ScrollTrigger.create({
-            trigger: `#s${s}-${id}`,
-            start: 'top 60%',
-            onEnter: () => {
-                const iframe = document.getElementById(`${id}-iframe`);
-                if (iframe && iframe.dataset.src && !iframe.src) {
-                    iframe.src = iframe.dataset.src;
-                }
-            }
-        });
-    });
-
-    const C = {
-        iceBlue:     '#a8d8ea',
-        meltOrange:  '#ff6b35',
-        glacierCyan: '#4fc3f7'
-    };
-
-
-    /* SECTION 4 — MODIS SURFACE MELT */
-    const modisFrames = ['2002-07-01','2007-07-01','2012-07-12','2015-07-01','2019-07-01','2023-07-01'];
-    const modisMap = L.map('map-modis', { center:[72,-40], zoom:3, zoomControl:true, scrollWheelZoom:false });
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-        attribution:'&copy; OpenStreetMap &copy; CARTO'
-    }).addTo(modisMap);
-
-    let currentModis = null;
-    function setModis(idx) {
-        const d = modisFrames[idx];
-        document.getElementById('modis-date-label').textContent = d;
-        document.getElementById('modis-highlight').style.display = d==='2012-07-12' ? 'inline-block' : 'none';
-        if(currentModis) modisMap.removeLayer(currentModis);
-        currentModis = L.tileLayer(
-            `https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/${d}/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg`,
-            { tileSize:256, opacity:0.85, errorTileUrl:'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7' }
-        ).addTo(modisMap);
-    }
-    setModis(0);
-    const modisSlider = document.getElementById('modis-slider');
-    modisSlider.addEventListener('input', e => setModis(+e.target.value));
-
-    let modisTimer, modisPlaying=false;
-    document.getElementById('modis-play').addEventListener('click', function(){
-        if(modisPlaying){ clearInterval(modisTimer); this.textContent='▶ Play'; modisPlaying=false; }
-        else { this.textContent='⏸ Pause'; modisPlaying=true;
-            modisTimer=setInterval(()=>{ let v=(+modisSlider.value+1)%modisFrames.length; modisSlider.value=v; setModis(v); },1200);
-        }
-    });
-    ScrollTrigger.create({ trigger:'#s4-modis', start:'top center', onEnter:()=>setTimeout(()=>modisMap.invalidateSize(),300) });
-
-    /* SECTION 5 — CRYOSAT-2 LEAFLET */
-    const cryoMap = L.map('map-cryosat', { center:[72,-40], zoom:3, zoomControl:true, scrollWheelZoom:false });
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png', {
-        attribution:'&copy; CARTO'
-    }).addTo(cryoMap);
-
-    const grid = [
-      [-12,-10,-8,-6,-5,-4,-5,-7,-9,-11],[-15,-13,-10,-7,-4,-3,-4,-6,-10,-13],
-      [-18,-15,-11,-6,-2,0,-2,-5,-11,-16],[-20,-17,-12,-5,0,2,0,-4,-12,-18],
-      [-22,-18,-13,-4,1,3,1,-3,-13,-20],[-21,-17,-12,-4,1,2,0,-4,-12,-19],
-      [-19,-15,-10,-5,-1,1,-1,-5,-10,-17],[-16,-13,-9,-6,-3,-1,-3,-6,-9,-14],
-      [-13,-11,-8,-6,-4,-3,-4,-7,-8,-12],[-10,-9,-7,-5,-4,-3,-4,-5,-7,-10]
-    ];
-    function gridColor(v) {
-        if(v<0){ const p=v/-22; return `rgb(${255-(255-139)*p|0},${255*(1-p)|0},${255*(1-p)|0})`; }
-        const p=v/3; return `rgb(${255-(255-173)*p|0},${255-(255-216)*p|0},${255-(255-230)*p|0})`;
-    }
-
-    // Load Greenland GeoJSON
-    fetch('https://raw.githubusercontent.com/glynnbird/countriesgeojson/master/greenland.geojson')
-        .then(r => r.json())
-        .then(data => {
-            // Draw shape outline
-            L.geoJSON(data, {
-                style: { color: '#ffffff', weight: 2, fillOpacity: 0.05, fillColor: '#ffffff' }
-            }).addTo(cryoMap);
-
-            // Bounding box for Greenland: Approx [59.7, -73.3] to [83.6, -11.3]
-            const minLat = 59.7, maxLat = 83.6;
-            const minLon = -73.3, maxLon = -11.3;
-            const stepLat = (maxLat - minLat) / 10;
-            const stepLon = (maxLon - minLon) / 10;
-
-            grid.forEach((row, r) => {
-                row.forEach((v, c) => {
-                    const latTop = maxLat - (r * stepLat);
-                    const latBot = maxLat - ((r + 1) * stepLat);
-                    const lonL = minLon + (c * stepLon);
-                    const lonR = minLon + ((c + 1) * stepLon);
-
-                    const bounds = [[latBot, lonL], [latTop, lonR]];
-                    const rect = L.rectangle(bounds, {
-                        color: gridColor(v),
-                        weight: 0,
-                        fillColor: gridColor(v),
-                        fillOpacity: 0
-                    }).addTo(cryoMap);
-                    
-                    // Add animation trigger class to path
-                    rect._path.classList.add('cryo-rect');
-                });
+        document.querySelectorAll('.scroll-reveal').forEach(el => {
+            gsap.to(el, {
+                opacity: 1, y: 0, duration: 1,
+                scrollTrigger: { trigger: el, start: "top 85%" }
             });
         });
 
-    ScrollTrigger.create({ trigger:'#s5-cryosat', start:'top center', onEnter:()=>{
-        setTimeout(() => cryoMap.invalidateSize(), 300);
-        gsap.to('.cryo-rect', { fillOpacity: 0.8, duration: 0.5, stagger: 0.02 });
-    }});
+        /* Lazy-load iframes to trigger autoplay on scroll */
+        ['jakobshavn', 'bedrock'].forEach(id => {
+            const s = id === 'jakobshavn' ? '6' : '8';
+            ScrollTrigger.create({
+                trigger: `#s${s}-${id}`,
+                start: 'top 60%',
+                onEnter: () => {
+                    const iframe = document.getElementById(`${id}-iframe`);
+                    if (iframe && iframe.dataset.src && !iframe.src) {
+                        iframe.src = iframe.dataset.src;
+                    }
+                }
+            });
+        });
 
-    /* SECTION 7 — TEMPERATURE ANOMALY (Datawrapper iframe) */
+        const C = {
+            iceBlue: '#a8d8ea',
+            meltOrange: '#ff6b35',
+            glacierCyan: '#4fc3f7'
+        };
 
-    /* SECTION 8 — BEDROCK & ICE TOPOGRAPHY (Kepler map loaded via iframe) */
 
-    /* SECTION 9 — SEA LEVEL COUNTER */
-    let slr = 11;
-    const tick = 0.8 / 31536000 / 20;
-    const slrEl = document.getElementById('slr-val');
-    setInterval(() => { slr += tick; slrEl.textContent = slr.toFixed(7); }, 50);
+        /* SECTION 4 — MODIS SURFACE MELT */
+        const modisFrames = ['2002-07-01', '2007-07-01', '2012-07-12', '2015-07-01', '2019-07-01', '2023-07-01'];
+        const modisMap = L.map('map-modis', { center: [72, -40], zoom: 3, zoomControl: true, scrollWheelZoom: false });
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; OpenStreetMap &copy; CARTO'
+        }).addTo(modisMap);
+
+        let currentModis = null;
+        function setModis(idx) {
+            const d = modisFrames[idx];
+            document.getElementById('modis-date-label').textContent = d;
+            document.getElementById('modis-highlight').style.display = d === '2012-07-12' ? 'inline-block' : 'none';
+            if (currentModis) modisMap.removeLayer(currentModis);
+            currentModis = L.tileLayer(
+                `https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/MODIS_Terra_CorrectedReflectance_TrueColor/default/${d}/GoogleMapsCompatible_Level9/{z}/{y}/{x}.jpg`,
+                { tileSize: 256, opacity: 0.85, errorTileUrl: 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7' }
+            ).addTo(modisMap);
+        }
+        setModis(0);
+        const modisSlider = document.getElementById('modis-slider');
+        modisSlider.addEventListener('input', e => setModis(+e.target.value));
+
+        let modisTimer, modisPlaying = false;
+        document.getElementById('modis-play').addEventListener('click', function () {
+            if (modisPlaying) { clearInterval(modisTimer); this.textContent = '▶ Play'; modisPlaying = false; }
+            else {
+                this.textContent = '⏸ Pause'; modisPlaying = true;
+                modisTimer = setInterval(() => { let v = (+modisSlider.value + 1) % modisFrames.length; modisSlider.value = v; setModis(v); }, 1200);
+            }
+        });
+        ScrollTrigger.create({ trigger: '#s4-modis', start: 'top center', onEnter: () => setTimeout(() => modisMap.invalidateSize(), 300) });
+
+        /* SECTION 5 — CRYOSAT-2 LEAFLET */
+        const cryoMap = L.map('map-cryosat', { center: [72, -40], zoom: 3, zoomControl: true, scrollWheelZoom: false });
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png', {
+            attribution: '&copy; CARTO'
+        }).addTo(cryoMap);
+
+        const grid = [
+            [-12, -10, -8, -6, -5, -4, -5, -7, -9, -11], [-15, -13, -10, -7, -4, -3, -4, -6, -10, -13],
+            [-18, -15, -11, -6, -2, 0, -2, -5, -11, -16], [-20, -17, -12, -5, 0, 2, 0, -4, -12, -18],
+            [-22, -18, -13, -4, 1, 3, 1, -3, -13, -20], [-21, -17, -12, -4, 1, 2, 0, -4, -12, -19],
+            [-19, -15, -10, -5, -1, 1, -1, -5, -10, -17], [-16, -13, -9, -6, -3, -1, -3, -6, -9, -14],
+            [-13, -11, -8, -6, -4, -3, -4, -7, -8, -12], [-10, -9, -7, -5, -4, -3, -4, -5, -7, -10]
+        ];
+        function gridColor(v) {
+            if (v < 0) { const p = v / -22; return `rgb(${255 - (255 - 139) * p | 0},${255 * (1 - p) | 0},${255 * (1 - p) | 0})`; }
+            const p = v / 3; return `rgb(${255 - (255 - 173) * p | 0},${255 - (255 - 216) * p | 0},${255 - (255 - 230) * p | 0})`;
+        }
+
+        // Load Greenland GeoJSON
+        fetch('https://raw.githubusercontent.com/glynnbird/countriesgeojson/master/greenland.geojson')
+            .then(r => r.json())
+            .then(data => {
+                // Draw shape outline
+                L.geoJSON(data, {
+                    style: { color: '#ffffff', weight: 2, fillOpacity: 0.05, fillColor: '#ffffff' }
+                }).addTo(cryoMap);
+
+                // Bounding box for Greenland: Approx [59.7, -73.3] to [83.6, -11.3]
+                const minLat = 59.7, maxLat = 83.6;
+                const minLon = -73.3, maxLon = -11.3;
+                const stepLat = (maxLat - minLat) / 10;
+                const stepLon = (maxLon - minLon) / 10;
+
+                grid.forEach((row, r) => {
+                    row.forEach((v, c) => {
+                        const latTop = maxLat - (r * stepLat);
+                        const latBot = maxLat - ((r + 1) * stepLat);
+                        const lonL = minLon + (c * stepLon);
+                        const lonR = minLon + ((c + 1) * stepLon);
+
+                        const bounds = [[latBot, lonL], [latTop, lonR]];
+                        const rect = L.rectangle(bounds, {
+                            color: gridColor(v),
+                            weight: 0,
+                            fillColor: gridColor(v),
+                            fillOpacity: 0
+                        }).addTo(cryoMap);
+
+                        // Add animation trigger class to path
+                        rect._path.classList.add('cryo-rect');
+                    });
+                });
+            });
+
+        ScrollTrigger.create({
+            trigger: '#s5-cryosat', start: 'top center', onEnter: () => {
+                setTimeout(() => cryoMap.invalidateSize(), 300);
+                gsap.to('.cryo-rect', { fillOpacity: 0.8, duration: 0.5, stagger: 0.02 });
+            }
+        });
+
+        /* SECTION 7 — TEMPERATURE ANOMALY (Datawrapper iframe) */
+
+        /* SECTION 8 — BEDROCK & ICE TOPOGRAPHY (Kepler map loaded via iframe) */
+
+        /* SECTION 9 — SEA LEVEL COUNTER */
+        let slr = 11;
+        const tick = 0.8 / 31536000 / 20;
+        const slrEl = document.getElementById('slr-val');
+        setInterval(() => { slr += tick; slrEl.textContent = slr.toFixed(7); }, 50);
 
     </script>
 
@@ -460,25 +539,26 @@
         const playMusicOnInteraction = () => {
             const music = document.getElementById('bg-music');
             if (music.paused) {
-                music.volume = 0.1; // Initialize audio volume
+                music.volume = 0.6; // Initialize audio volume
                 music.play().then(() => {
-                    
+
                     window.removeEventListener('click', playMusicOnInteraction);
                     window.removeEventListener('scroll', playMusicOnInteraction);
                     window.removeEventListener('keydown', playMusicOnInteraction);
                     window.removeEventListener('touchstart', playMusicOnInteraction);
                 }).catch(e => {
-                    
+
                     console.error("Audio playback blocked", e);
                 });
             }
         };
-        
-        
+
+
         window.addEventListener('click', playMusicOnInteraction);
         window.addEventListener('scroll', playMusicOnInteraction);
         window.addEventListener('keydown', playMusicOnInteraction);
         window.addEventListener('touchstart', playMusicOnInteraction);
     </script>
 </body>
+
 </html>
