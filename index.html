@@ -460,7 +460,7 @@
         const playMusicOnInteraction = () => {
             const music = document.getElementById('bg-music');
             if (music.paused) {
-                music.volume = 0.4; // Soft volume for meditation (40%)
+                music.volume = 0.1; // Extremely soft background volume (10% of the original track)
                 music.play().then(() => {
                     // Only remove listeners if playback successfully starts
                     window.removeEventListener('click', playMusicOnInteraction);
