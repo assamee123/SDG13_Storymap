@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <audio id="bg-music" loop src="Assets/music.mp3"></audio>
+
 
     <!-- ═══════════════ FIXED THREE.JS BACKGROUND ═══════════════ -->
     <canvas id="earth-bg"></canvas>
@@ -18,23 +20,25 @@
         <div class="container">
             <img src="Assets/HafenCity_Universit%C3%A4t_Logo-cropped.svg" alt="HafenCity University Hamburg Logo" class="hcu-logo">
             <h1>Greenland is Melting</h1>
-            <p style="font-size:1.45rem;color:#ddd;">One of Earth's last great ice sheets is disappearing before our eyes.</p>
+            <p style="font-size:1.45rem;color:#ddd;max-width:800px;text-align:center;">One of Earth's last great ice sheets is disappearing before our eyes. Greenland is one of the most rapidly changing environments on Earth, its mass loss driven by a complex system of atmospheric warming, ocean heat intrusion, and accelerating feedback mechanisms.</p>
             <div class="stats-ticker">
                 <span>266 Gt/yr mass loss</span> &middot;
                 <span>11 mm sea level rise</span> &middot;
                 <span>Arctic +3.3 °C</span>
             </div>
         </div>
-        <div class="scroll-arrow">&#x2193;</div>
+        <div class="scroll-chevron"></div>
     </section>
 
     <!-- ═══════════════ SECTION 2: GRACE-FO (Our World in Data) ═══════════════ -->
     <section id="s2-grace">
         <div class="container scroll-reveal">
             <div class="glass">
-                <h2>Ice Mass Loss (GRACE-FO)</h2>
-                <div class="iframe-container"><iframe id="grace-iframe" data-src="https://ourworldindata.org/grapher/ice-sheet-mass-balance?tab=chart&time=earliest..latest" allow="web-share" style="width:100%;height:100%;border:0"></iframe></div>
-                <p class="caption">Greenland has lost over 4,700 Gt of ice since 2002 — enough to fill Lake Superior twice. <em>Source: Our World in Data / NASA GRACE.</em></p>
+                <h2>The Scale of the Melt</h2>
+                <div class="iframe-container">
+                    <iframe title="Ice Sheet Mass Balance" aria-label="Line chart" id="datawrapper-chart-Mf9Cv" src="https://datawrapper.dwcdn.net/Mf9Cv/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="464" data-external="1"></iframe><script type="text/javascript">(function(){function e(){window.addEventListener("message",function(e){if(e.data["datawrapper-height"]!==void 0){var t=document.querySelectorAll("iframe");for(var n in e.data["datawrapper-height"])for(var r=0,i;i=t[r];r++)if(i.contentWindow===e.source){var a=e.data["datawrapper-height"][n]+"px";i.style.height=a}}})}e()})();</script>
+                </div>
+                <p class="caption">Satellite gravity measurements reveal a staggering reality: Greenland has shed over 4,700 gigatonnes of ice since 2002. In the last 26 years alone, this melting ice has added 11 millimeters to global sea level rise, threatening hundreds of millions of people in low-lying coastal regions worldwide. <em>Source: <a href="https://ourworldindata.org/grapher/ice-sheet-mass-balance" target="_blank" style="color: inherit; text-decoration: underline;">Our World in Data</a> / NASA GRACE.</em></p>
             </div>
         </div>
     </section>
@@ -43,9 +47,11 @@
     <section id="s3-co2">
         <div class="container scroll-reveal">
             <div class="glass">
-                <h2>The CO₂ Connection</h2>
-                <div class="iframe-container"><iframe id="co2-iframe" data-src="https://ourworldindata.org/grapher/co2-concentration-long-term?tab=chart&time=earliest..latest" allow="web-share" style="width:100%;height:100%;border:0"></iframe></div>
-                <p class="caption">As CO₂ crossed 400 ppm in 2013, ice loss accelerated sharply. <em>Source: Our World in Data / NOAA.</em></p>
+                <h2>Fueling the Melt: The Rise of CO₂</h2>
+                <div class="iframe-container">
+                    <iframe title="Global atmospheric CO₂ concentration" aria-label="Line chart" id="datawrapper-chart-OlY1G" src="https://datawrapper.dwcdn.net/OlY1G/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="444" data-external="1"></iframe><script type="text/javascript">(function(){function e(){window.addEventListener("message",function(e){if(e.data["datawrapper-height"]!==void 0){var t=document.querySelectorAll("iframe");for(var n in e.data["datawrapper-height"])for(var r=0,i;i=t[r];r++)if(i.contentWindow===e.source){var a=e.data["datawrapper-height"][n]+"px";i.style.height=a}}})}e()})();</script>
+                </div>
+                <p class="caption">Human-driven carbon emissions act as the primary catalyst for this unprecedented melting. Rising atmospheric CO₂ levels (now >420 ppm) drive <strong>Arctic amplification</strong> — a phenomenon where the Arctic warms at two to four times the global average rate. The region has already warmed by 3.3°C compared to pre-industrial levels, with no sign of slowing. <em>Source: <a href="https://ourworldindata.org/grapher/co2-concentration-long-term" target="_blank" style="color: inherit; text-decoration: underline;">Our World in Data</a> / NOAA.</em></p>
             </div>
         </div>
     </section>
@@ -62,7 +68,7 @@
                     <span id="modis-highlight" class="highlight-badge" style="display:none">97 % Melt Event!</span>
                 </div>
                 <div class="map-container" id="map-modis"></div>
-                <p class="caption">In July 2012, 97 % of the ice sheet surface showed signs of melting — a once-in-800-year event now recurring.</p>
+                <p class="caption">In July 2012, 97% of the ice sheet surface showed signs of melting — an extreme event becoming recurrent. This triggers a dangerous <strong>ice-albedo feedback</strong>: melting ice reveals darker ocean and land that absorb the sun's energy, further accelerating the melt. Meanwhile, surface meltwater draining through moulins provides <strong>basal lubrication</strong>, speeding up the ice flow toward the ocean.</p>
             </div>
         </div>
     </section>
@@ -78,7 +84,7 @@
                     <span style="left:50%;transform:translateX(-50%)">0</span>
                     <span style="right:0">+3 cm/yr</span>
                 </div>
-                <p class="caption" style="margin-top:1rem">CryoSat-2 radar altimetry reveals the margins are thinning up to 22 cm per year while the interior gains slight snowfall accumulation — a pattern that accelerates calving at the edges.</p>
+                <p class="caption" style="margin-top:1rem">CryoSat-2 radar altimetry reveals the margins are thinning up to 22 cm per year. This coastal thinning is largely driven by <strong>ocean heat intrusion</strong> — warm subpolar ocean water moving into the Arctic basin — which relentlessly undermines marine-terminating glaciers from below.</p>
             </div>
         </div>
     </section>
@@ -89,7 +95,7 @@
             <div class="glass">
                 <h2>Glacier Retreat — Jakobshavn Timelapse</h2>
                 <div class="iframe-container"><iframe id="jakobshavn-iframe" data-src="https://earthengine.google.com/iframes/timelapse_player_embed.html#v=69.15,-50.5,9,latLng&t=3.23&ps=50&bt=19840101&et=20221231" allow="autoplay" style="width:100%;height:100%;border:0"></iframe></div>
-                <p class="caption">Jakobshavn Glacier has retreated 35 km since 1850 — the pace tripled after 2000. Observe the accelerating retreat in this Google Earth Engine satellite timelapse (1984–2022). <em>Source: Google Earth Engine / Landsat.</em></p>
+                <p class="caption">Jakobshavn Glacier has retreated 35 km since 1850 — the pace tripled after 2000. It now discharges roughly 46 km³ of ice into the ocean each year. Retreating past critical thresholds risks crossing <strong>tipping points</strong> into marine ice sheet instability, causing irreversible collapse regardless of future emissions cuts. <em>Source: Google Earth Engine / Landsat.</em></p>
             </div>
         </div>
     </section>
@@ -103,7 +109,8 @@
                     <iframe title="" aria-label="Line chart" id="datawrapper-chart-k8ztA" src="https://datawrapper.dwcdn.net/k8ztA/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="360" data-external="1"></iframe>
                     <script type="text/javascript">(function(){function e(){window.addEventListener("message",function(e){if(e.data["datawrapper-height"]!==void 0){var t=document.querySelectorAll("iframe");for(var n in e.data["datawrapper-height"])for(var r=0,i;i=t[r];r++)if(i.contentWindow===e.source){var a=e.data["datawrapper-height"][n]+"px";i.style.height=a}}})}e()})();</script>
                 </div>
-                <p class="caption">Source: The Programme for Monitoring of the Greenland Ice Sheet (PROMICE) and the Greenland Climate Network (GC-Net). The file contains automatic weather station (AWS) data from the "JAR" station, which stands for the Jakobshavn Ablation Region on the Greenland Ice Sheet.</p>
+                <p class="caption" style="margin-bottom:0.5rem;color:#fff;">At the local scale, Inuit communities in Ilulissat face direct cultural, economic, and physical consequences. Destabilised and unpredictable sea-ice seasons severely threaten their traditional hunting practices and coastal infrastructure.</p>
+                <p class="caption" style="font-size:0.9rem;">Source: The Programme for Monitoring of the Greenland Ice Sheet (PROMICE) and the Greenland Climate Network (GC-Net). The file contains automatic weather station (AWS) data from the "JAR" station, which stands for the Jakobshavn Ablation Region on the Greenland Ice Sheet.</p>
             </div>
         </div>
     </section>
@@ -133,11 +140,14 @@
                     <div class="stat-card"><h3>97 %</h3><p>Surface Melt (2012)</p></div>
                     <div class="stat-card"><h3>+3.3 °C</h3><p>Arctic Warming</p></div>
                 </div>
-                <div class="quote-block">
-                    "The sea ice used to come in October. Now we wait until January. Our hunters cannot go out."<br>— Inuit elder, Ilulissat.
-                </div>
-                <div style="text-align:center;max-width:780px;color:#ddd;line-height:1.6">
-                    <p><strong>SDG 13 Targets:</strong> Integrate climate change measures into national policies, strategies, and planning. Improve education, awareness-raising, and human and institutional capacity on climate change mitigation, adaptation, impact reduction, and early warning.</p>
+                <div class="elder-story-block">
+                    <div class="elder-image-wrapper">
+                        <img src="https://resources.arctickingdom.com/hs-fs/hubfs/Imported_Blog_Media/Arctic_Kingdom_Inuit_in_traditional_Clothing_DSC_8960-Jun-29-2022-07-39-17-62-PM.jpg" alt="Inuit in traditional clothing" class="elder-image">
+                        <p class="image-citation">Image source: Arctic Kingdom</p>
+                    </div>
+                    <div class="quote-block">
+                        "The sea ice used to come in October. Now we wait until January. Our hunters cannot go out."<br><span style="display:inline-block;margin-top:0.5rem;">— Inuit elder, Ilulissat.</span>
+                    </div>
                 </div>
 
 
@@ -322,8 +332,8 @@
     });
 
     /* ── Lazy-load iframes to trigger autoplay on scroll ── */
-    ['grace', 'co2', 'jakobshavn', 'bedrock'].forEach(id => {
-        const s = id === 'grace' ? '2' : id === 'co2' ? '3' : id === 'jakobshavn' ? '6' : '8';
+    ['jakobshavn', 'bedrock'].forEach(id => {
+        const s = id === 'jakobshavn' ? '6' : '8';
         ScrollTrigger.create({
             trigger: `#s${s}-${id}`,
             start: 'top 60%',
@@ -445,5 +455,25 @@
 
     </script>
 
+    <!-- Audio Play Script -->
+    <script>
+        const playMusicOnInteraction = () => {
+            const music = document.getElementById('bg-music');
+            if (music.paused) {
+                music.volume = 0.6; // Soft volume for meditation (60%)
+                music.play().catch(e => console.log("Audio play failed:", e));
+            }
+            // Remove listeners after first interaction
+            window.removeEventListener('click', playMusicOnInteraction);
+            window.removeEventListener('scroll', playMusicOnInteraction);
+            window.removeEventListener('keydown', playMusicOnInteraction);
+            window.removeEventListener('touchstart', playMusicOnInteraction);
+        };
+        
+        window.addEventListener('click', playMusicOnInteraction, { once: true });
+        window.addEventListener('scroll', playMusicOnInteraction, { once: true });
+        window.addEventListener('keydown', playMusicOnInteraction, { once: true });
+        window.addEventListener('touchstart', playMusicOnInteraction, { once: true });
+    </script>
 </body>
 </html>
