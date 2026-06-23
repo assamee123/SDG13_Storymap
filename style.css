@@ -13,7 +13,7 @@ body {
     overflow-x: hidden;
 }
 
-/* ── Fixed Three.js background canvas ── */
+/* Fixed Three.js background canvas */
 #earth-bg {
     position: fixed;
     top: 0;
@@ -24,7 +24,7 @@ body {
     pointer-events: none;
 }
 
-/* ── Sections float over the fixed background ── */
+/* Sections float over the fixed background */
 section {
     position: relative;
     z-index: 1;
@@ -49,7 +49,7 @@ section {
     transform: translateY(60px);
 }
 
-/* ── Glass card: each section content sits in this ── */
+/* Glass card: each section content sits in this */
 .glass {
     background: rgba(10, 22, 40, 0.75);
     backdrop-filter: blur(14px);
@@ -64,7 +64,7 @@ section {
     gap: 1.5rem;
 }
 
-/* ── Typography ── */
+/* Typography */
 h1 {
     font-size: clamp(2.5rem, 6vw, 4.5rem);
     text-align: center;
@@ -84,7 +84,7 @@ p, .caption {
     color: #ccd;
 }
 
-/* ── Chart wrapper ── */
+/* Chart wrapper */
 .chart-container {
     width: 100%;
     height: 55vh;
@@ -109,12 +109,12 @@ p, .caption {
     border-radius: 12px;
 }
 
-/* Invert Datawrapper charts to make text white, remove white highlights, and keep transparency */
+/* Dark mode inversion for iframes */
 .iframe-container iframe[id^="datawrapper-chart-"] {
     filter: invert(1) hue-rotate(180deg) contrast(1.1);
 }
 
-/* ── Hero specifics ── */
+/* Hero specifics */
 #s1-hero {
     background: transparent;
 }
@@ -155,7 +155,7 @@ p, .caption {
     backdrop-filter: blur(6px);
 }
 
-/* ── SVG Grid ── */
+/* SVG Grid */
 #cryosat-svg { max-width: 100%; height: auto; }
 .grid-legend {
     display: flex;
@@ -175,7 +175,7 @@ p, .caption {
     font-weight: 700;
 }
 
-/* ── Leaflet overrrides ── */
+/* Leaflet overrrides */
 .leaflet-container {
     background: transparent;
     font-family: inherit;
@@ -191,12 +191,12 @@ p, .caption {
     background: rgba(10,22,40,0.9);
 }
 
-/* ── HCU Logo & Footer ── */
+/* HCU Logo & Footer */
 .hcu-logo {
     width: 250px;
     max-width: 100%;
     margin-bottom: 2rem;
-    filter: brightness(0) invert(1); /* Makes the logo white */
+    filter: brightness(0) invert(1); 
     opacity: 0.9;
 }
 
@@ -214,7 +214,7 @@ p, .caption {
     color: var(--accent-1);
 }
 
-/* ── Map Controls ── */
+/* Map Controls */
 .map-controls {
     display: flex;
     gap: 1rem;
@@ -259,7 +259,7 @@ p, .caption {
     background: #111;
 }
 
-/* ── Section 9: CTA ── */
+/* Section 9: CTA */
 .stat-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -354,7 +354,7 @@ p, .caption {
 .sources-list a { color: var(--accent-3); text-decoration: none; }
 .sources-list a:hover { text-decoration: underline; }
 
-/* ── Responsive ── */
+/* Responsive */
 @media (max-width: 768px) {
     section { padding: 2rem 1rem; }
     .glass { padding: 2rem 1.25rem; }
